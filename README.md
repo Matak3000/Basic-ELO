@@ -17,5 +17,7 @@ Gain 13 points : Lose 13 points
 
 Clauses:
 Overscore - when point changes >25, limits to 25
+
 Underscore - when points changes <5, limits to 5
+
 Negative cap - when losers points after changes <0, sets to 0

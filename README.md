@@ -21,6 +21,8 @@ Gain 17 points : Lose 17 points
 (Winner) rank 2 vs rank 1 (Loser)
 Gain 13 points : Lose 13 points
 
+Effectively, this is to encourage challenging higher-rank parties, and discourage 'bullying' lower-rank parties.
+
 
 Clauses:
 

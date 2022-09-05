@@ -34,22 +34,22 @@ elif PointsGain < 5:
     PointsGain = 5
     print("Underscore clause - points change capped at 5")
     
-#applying changes, with clause to prevent over-punishing lower rank losers
-WinnerScore += PointsGain
-print("Winner gains ", PointsGain, " points")
-
-if WinnerRank > LoserRank:
-    PointsLoss = PointsGain
-    print("Expected Result Clause - points lost reduced for lower-rank loser")
-else:
-    y = WinnerRank - LoserRank
-    PointsLoss = 15 + y * 2
-    if PointsLoss > 25:
-        PointsLoss = 25
-    elif PointsLoss < 5:
-        PointsLoss = 5
-LoserScore -= PointsLoss
-print("Loser loses ", PointsLoss, " points")
+#calculating point changes based on rank difference - with limits for changes <5 or >25
+print("Winner's rank is ", WinnerRank, ", and Loser's rank is ", LoserRank, ", therefore:")
+x = LoserRank - WinnerRank
+PointsChange = 15 + x * 2
+if PointsChange > 25:
+    PointsChange = 25
+    print("Overscore Clause - points change capped at 25")
+elif PointsChange < 5:
+    PointsChange = 5
+    print("Underscore clause - points change capped at 5")
+    
+#applying changes
+WinnerScore += PointsChange
+print("Winner gains ", PointsChange, " points")
+LoserScore -= PointsChange
+print("Loser loses ", PointsChange, " points")
 
 #clause to prevent negative points after applying changes
 if LoserScore < 0:

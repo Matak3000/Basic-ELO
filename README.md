@@ -13,13 +13,13 @@ Point changes are applied, and the ranks are recalculated, if a rank change has 
 Examples:
 
 (Winner) rank 1 vs rank 1 (Loser)
-Gain 15 points : Lose 15 points
+Gain/Lose 15 points
 
 (Winner) rank 1 vs rank 2 (Loser)
-Gain 17 points : Lose 17 points
+Gain/Lose 17 points
 
 (Winner) rank 2 vs rank 1 (Loser)
-Gain 13 points : Lose 13 points
+Gain/Lose 13 points
 
 Effectively, this is to encourage challenging higher-rank parties, and discourage 'bullying' lower-rank parties.
 
